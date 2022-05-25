@@ -25,6 +25,7 @@ export const ProductCard = ({
   style,
   onChange,
 }: Props) => {
+  
   const { counter, increaseBy } = useProduct({ onChange, product });
 
   return (

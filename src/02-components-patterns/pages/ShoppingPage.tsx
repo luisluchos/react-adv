@@ -37,7 +37,13 @@ export default function ShoppingPage() {
     count: number;
     product: Product;
   }) => {
-    console.log("onProductCountChange", count, product);
+    setShoppingCart((oldShoppingCart) => {
+      if (count === 0) {
+        delete oldShoppingCart[product.id];
+        return oldShoppingCart;
+      }
+      return { ...oldShoppingCart, [product.id]: { ...product, count } };
+    });
   };
 
   return (
