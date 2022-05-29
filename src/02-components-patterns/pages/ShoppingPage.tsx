@@ -21,6 +21,7 @@ export default function ShoppingPage() {
           className="bg-dark"
           key={product.id}
           initialValues={{ count: 4, maxCount: 10 }}
+          value={9}
         >
           <ProductImage className="custom-image" />
           <ProductTitle className="text-white" style={{ fontWeight: "bold" }} />
