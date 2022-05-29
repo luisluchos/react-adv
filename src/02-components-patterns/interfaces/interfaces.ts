@@ -15,3 +15,8 @@
     product: Product;
     count: number;
   }
+
+  export interface InitialValues {
+    count?:number;
+    maxCount?:number;
+  }
