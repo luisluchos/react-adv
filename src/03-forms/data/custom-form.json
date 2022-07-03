@@ -1,0 +1,59 @@
+[
+    {
+        "type":"input",
+        "name":"firstName",
+        "placeholder":"Name",
+        "label":"firstName",
+        "value":"",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"minLength",
+                "value":5
+            }
+        ]
+    },
+    {
+        "type":"input",
+        "name":"lastName",
+        "placeholder":"Last Name",
+        "label":"Last Name",
+        "value":"",
+        "validations":[
+            {
+                "type":"required"
+            }
+        ]
+    }
+    ,
+    {
+        "type":"email",
+        "name":"email",
+        "placeholder":"",
+        "label":"email",
+        "value":"",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"email"
+            }
+        ]
+    }
+    ,
+    {
+        "type":"select",
+        "name":"favoriteGame",
+        "label":"Favorite Game",
+        "value":"",
+        "options":[{"id":1, "label":"Smash bross"}, {"id":2, "label":"Fifa"},{"id":3, "label":"Tft"}],
+        "validations":[
+            {
+                "type":"required"
+            }
+        ]
+    }
+]
